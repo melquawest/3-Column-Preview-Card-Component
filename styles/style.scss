@@ -1,0 +1,197 @@
+@import 'variables';
+@import 'button';
+@import 'card';
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    margin-top: 4rem;
+    .item{
+        @include card-background;
+        
+        .heading{
+           @include headings;
+        }
+
+        .intro{
+           @include intros;
+        }
+        
+        .learn-more{
+            @include buttons;
+        }
+        .learn-more:hover{
+            @extend .learn-more;
+            color: $very-light-gray;
+            background: none;
+            outline: $very-light-gray solid 2px;
+            transition: outline 0.2s 0.05s ease-in-out;
+        }
+    }
+
+    .item-1{
+        @include card-background;
+        border-radius: 0 0 0 0;
+        background-color: $dark-cyan;
+
+        .heading{
+            @include headings;
+        }
+
+        .intro{
+            @include intros;
+        }
+
+        .learn-more{
+            @include buttons;
+            color: $dark-cyan
+        }
+        .learn-more:hover{
+            @extend .learn-more;
+            color: $very-light-gray;
+            background: none;
+            outline: $very-light-gray solid 2px;
+            transition: outline 0.2s 0.05s ease-in-out;
+        }
+    }
+
+    .item-2{
+        @include card-background;
+        border-radius: 0 0.625rem 0.625rem 0;
+        background-color: $very-dark-cyan;
+
+        .heading{
+            @include headings;
+        }
+        .intro{
+            @include intros;
+        }
+        .learn-more{
+            @include buttons;
+            color: $very-dark-cyan;
+        }
+        .learn-more:hover{
+            @extend .learn-more;
+            background: none;
+            outline: $very-light-gray solid 2px;
+            color: $very-light-gray;
+            transition: outline 0.2s 0.05s ease-in-out;
+        }
+    }
+}
+
+.attribution{
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    font-size: $attribution-font;
+    text-align: center;
+    margin: 2.5rem 0;
+    a{
+        color: $attribution-link;
+        text-decoration: none;
+    }
+}
+
+// media query for smaller screens
+@media (min-width: 1440px){
+    .container{
+        max-width: 80%;
+    }
+    .item .item-1 .item-2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1089px){
+    .container{
+        width: 80%;
+    }
+    .item .item-1 .item-2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 971px){
+    .container{
+        max-width: 90%;
+    }
+    .item .item-1 .item-2{
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 876px){
+    .container{
+        max-width: 70%;
+        flex-direction: column;
+
+        .item{
+            @include card-background;
+            border-radius: .625rem .625rem 0 0;
+        }
+
+        .item-2{
+            @include card-background;
+            background-color: $very-dark-cyan;
+            border-radius: 0 0 .625rem .625rem;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .container {
+      max-width: 90%;
+      .item{
+        @include card-background;
+        padding: 2rem;
+        border-radius: 0.625rem 0.625rem 0 0;
+        .intro{
+            @include intros;
+            padding: 0 0 1.5rem;
+        }
+        .learn-more{
+            @include buttons;
+            padding: .7rem 1.5rem;
+        }
+        }
+
+        .item-1{
+            @include card-background;
+            background-color: $dark-cyan;
+            padding: 2rem;
+            border-radius: 0 0 0 0;
+            .intro{
+                @include intros;
+                padding: 0 0 1.5rem;
+            }
+            .learn-more{
+                @include buttons;
+                color: $dark-cyan;
+                padding: .7rem 1.5rem;
+            }
+        }
+
+      .item-2{
+        @include card-background;
+        padding: 2rem;
+        border-radius: 0 0 0.625rem 0.625rem;
+        background-color: $very-dark-cyan;
+        .intro{
+            @include intros;
+            padding: 0 0 1.5rem;
+        }
+        .learn-more{
+            @include buttons;
+            color: $very-dark-cyan;
+            padding: .7rem 1.5rem;
+        }
+      }
+    }
+  }

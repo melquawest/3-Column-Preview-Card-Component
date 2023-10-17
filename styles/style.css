@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 65%;
+  margin: auto;
+  margin-top: 4rem;
+}
+.container .item {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2.7rem;
+  border-radius: 0.625rem 0 0 0.625rem;
+}
+.container .item .heading {
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+}
+.container .item .intro {
+  font-size: 0.8125rem;
+  letter-spacing: normal;
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-style: 0.9375rem;
+  line-height: 1.4rem;
+  padding: 0.4rem 0 4rem;
+}
+.container .item .learn-more, .container .item .learn-more:hover {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  padding: 0.8125rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.container .item .learn-more:hover {
+  color: hsl(0, 0%, 95%);
+  background: none;
+  outline: hsl(0, 0%, 95%) solid 2px;
+  transition: outline 0.2s 0.05s ease-in-out;
+}
+.container .item-1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2.7rem;
+  border-radius: 0.625rem 0 0 0.625rem;
+  border-radius: 0 0 0 0;
+  background-color: hsl(184, 100%, 22%);
+}
+.container .item-1 .heading {
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+}
+.container .item-1 .intro {
+  font-size: 0.8125rem;
+  letter-spacing: normal;
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-style: 0.9375rem;
+  line-height: 1.4rem;
+  padding: 0.4rem 0 4rem;
+}
+.container .item-1 .learn-more, .container .item-1 .learn-more:hover {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  padding: 0.8125rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: hsl(184, 100%, 22%);
+}
+.container .item-1 .learn-more:hover {
+  color: hsl(0, 0%, 95%);
+  background: none;
+  outline: hsl(0, 0%, 95%) solid 2px;
+  transition: outline 0.2s 0.05s ease-in-out;
+}
+.container .item-2 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2.7rem;
+  border-radius: 0.625rem 0 0 0.625rem;
+  border-radius: 0 0.625rem 0.625rem 0;
+  background-color: hsl(179, 100%, 13%);
+}
+.container .item-2 .heading {
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+}
+.container .item-2 .intro {
+  font-size: 0.8125rem;
+  letter-spacing: normal;
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-style: 0.9375rem;
+  line-height: 1.4rem;
+  padding: 0.4rem 0 4rem;
+}
+.container .item-2 .learn-more, .container .item-2 .learn-more:hover {
+  color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  padding: 0.8125rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: hsl(179, 100%, 13%);
+}
+.container .item-2 .learn-more:hover {
+  background: none;
+  outline: hsl(0, 0%, 95%) solid 2px;
+  color: hsl(0, 0%, 95%);
+  transition: outline 0.2s 0.05s ease-in-out;
+}
+
+.attribution {
+  font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+  font-size: 0.6875rem;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 80%;
+  }
+  .item .item-1 .item-2 {
+    width: 100%;
+  }
+}
+@media (max-width: 1089px) {
+  .container {
+    width: 80%;
+  }
+  .item .item-1 .item-2 {
+    width: 100%;
+  }
+}
+@media (max-width: 971px) {
+  .container {
+    max-width: 90%;
+  }
+  .item .item-1 .item-2 {
+    width: 100%;
+  }
+}
+@media (max-width: 876px) {
+  .container {
+    max-width: 70%;
+    flex-direction: column;
+  }
+  .container .item {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2.7rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .container .item-2 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2.7rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+}
+@media (max-width: 376px) {
+  .container {
+    max-width: 90%;
+  }
+  .container .item {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2.7rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+    padding: 2rem;
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  .container .item .intro {
+    font-size: 0.8125rem;
+    letter-spacing: normal;
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-style: 0.9375rem;
+    line-height: 1.4rem;
+    padding: 0.4rem 0 4rem;
+    padding: 0 0 1.5rem;
+  }
+  .container .item .learn-more, .container .item .learn-more:hover {
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+    padding: 0.8125rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    padding: 0.7rem 1.5rem;
+  }
+  .container .item-1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2.7rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+    background-color: hsl(184, 100%, 22%);
+    padding: 2rem;
+    border-radius: 0 0 0 0;
+  }
+  .container .item-1 .intro {
+    font-size: 0.8125rem;
+    letter-spacing: normal;
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-style: 0.9375rem;
+    line-height: 1.4rem;
+    padding: 0.4rem 0 4rem;
+    padding: 0 0 1.5rem;
+  }
+  .container .item-1 .learn-more, .container .item-1 .learn-more:hover {
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+    padding: 0.8125rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: hsl(184, 100%, 22%);
+    padding: 0.7rem 1.5rem;
+  }
+  .container .item-2 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2.7rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+    padding: 2rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    background-color: hsl(179, 100%, 13%);
+  }
+  .container .item-2 .intro {
+    font-size: 0.8125rem;
+    letter-spacing: normal;
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-style: 0.9375rem;
+    line-height: 1.4rem;
+    padding: 0.4rem 0 4rem;
+    padding: 0 0 1.5rem;
+  }
+  .container .item-2 .learn-more, .container .item-2 .learn-more:hover {
+    color: hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
+    padding: 0.8125rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: hsl(179, 100%, 13%);
+    padding: 0.7rem 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

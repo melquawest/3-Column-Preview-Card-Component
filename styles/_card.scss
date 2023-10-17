@@ -1,0 +1,26 @@
+@import 'variables';
+
+@mixin card-background{
+    background-color: $bright-orange;
+    padding: 2.7rem;
+    border-radius: 0.625rem 0 0 0.625rem;
+}
+
+@mixin headings{
+    font-size: 2rem;
+    font-family: 'Big Shoulders Display', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: $very-light-gray;
+    text-transform: uppercase;
+    padding: 1.5rem 0;
+}
+
+@mixin intros{
+    font-size: 0.8125rem;
+    letter-spacing: normal;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    color: $paragraph-text;
+    font-style: $body-font;
+    line-height: 1.4rem;
+    padding: .4rem 0 4rem;
+}

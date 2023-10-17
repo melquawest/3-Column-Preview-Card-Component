@@ -1,0 +1,10 @@
+@import 'variables';
+
+@mixin buttons{
+    color: $bright-orange;
+    background-color: $very-light-gray;
+    font-family: 'Lexend Deca', Arial, Helvetica, sans-serif;
+    padding: 0.8125rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;    
+}
